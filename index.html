@@ -3,12 +3,49 @@
 <html>
 
 <head>
+
 <title>Lauren Capucci's Portfolio
 </title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+    #container {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(17, 131, 202);
+}
+    
+    @media (orientation: portrait) {
+        #container {flex-direction: column;}
+    }
+
+.item {
+    text-align: center;
+    padding: 30px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;}
+</style>
 </head>
 
 <body>
+
+<div id="container">
+    <div class="item">
+        <p>Journalism Articles</p>
+    </div>
+    <div class="item">
+        <p>My Biology Experience</p>
+        </div>
+    <div class="item">
+        <p>Personal Projects</p>
+    </div>
+    <div class="item">
+       <p>Contact Information</p>
+    </div>
+</div>
+
 <h1>About me</h1>
 <img alt="Lauren with her graduation cap smiling" src="me.jpg" width=304px height=201px/>
 

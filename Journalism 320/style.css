@@ -9,10 +9,10 @@ ul {
 }
 
 .headers {
-    background-color: lightblue;
+    background-color: rgb(69, 125, 215);
+    color: white;
     font-family: sans-serif;
     text-align: center;
-    color: black;
     width: 90%;
     margin: auto;
 }
@@ -21,3 +21,8 @@ ul {
     {background-color: rgb(11, 70, 129);
         color: white;
     }
+
+body {background-image: url(northwestern.png.jpeg);
+    background-repeat: no-repeat; background-position: top; margin: 20px; background-attachment: scroll}
+
+
