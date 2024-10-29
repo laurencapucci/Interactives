@@ -1,3 +1,5 @@
+/* Here, I am making sure that the fonts are all uniform so the style of the website looks good. */
+
 p {
     color: black;
     font-family: sans-serif;
@@ -17,6 +19,7 @@ ul {
     margin: auto;
 }
 
+/* Again, setting up a style so when this is called upon the background is blue and the fone is white.*/
 .additionalinfo
     {background-color: rgb(11, 70, 129);
         color: white;
