@@ -3,20 +3,31 @@
 p {
     color: black;
     font-family: sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 ul {
     color: black;
     font-family: sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    margin: auto;
 }
 
 .headers {
-    background-color: lightblue;
+    background-color: rgb(217, 218, 219);
     font-family: sans-serif;
     text-align: center;
     color: black;
-    width: 90%;
-    margin: auto;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 /* Again, setting up a style so when this is called upon the background is blue and the fone is white.*/
