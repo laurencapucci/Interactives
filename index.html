@@ -1,74 +1,90 @@
 
-<!DOCTYPEhtml>
+<!DOCTYPE html>
 <html>
 
 <head>
-<title>Lauren Capucci's Portfolio
-</title>
+    <title>Lauren Capucci's Portfolio</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<!--I decided to link my CSS page here so I can properly set-up the design of my website on a CSS page and make it more organized.-->
+    <!-- I decided to link my CSS page here so I can properly set up the design of my website on a CSS page and make it more organized. -->
 
-<style>
-    #container {
-        display: flex;
-        flex-direction: row;
-}
-    
-    @media (orientation: portrait) {
-        #container {flex-direction: column;}
-    }
+    <style>
+        #container {
+            display: flex;
+            flex-direction: row;
+        }
 
-.aboutme {
-    font-family: sans-serif;
-    text-align: center;
-}
+        @media (orientation: portrait) {
+            #container {
+                flex-direction: column;
+            }
+        }
 
-.item {
-    text-align: center;
-    padding: 30px;
-    border-color: white;
-    border-width: 1px;
-    border-style: solid;
-    background-color: rgb(171, 193, 228);
-    height: 20px;
-    text-align: center;}
-</style>
+        .aboutme {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .item {
+            text-align: center;
+            padding: 30px;
+            border-color: white;
+            border-width: 1px;
+            border-style: solid;
+            background-color: rgb(171, 193, 228);
+            height: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-<!--Now, I'm adding in a sort of "grid" so as to set up the tabs of my website.-->
+    <!-- Now, I'm adding in a sort of "grid" to set up the tabs of my website. -->
 
-<div id="container">
-    <div class="item">
-        <p><a href=journalismarticles.html>Journalism Articles</a></p>
+    <div id="container">
+        <div class="item">
+            <p><a href="journalismarticles.html">Journalism Articles</a></p>
         </div>
-    <div class="item">
-        <p><a href="https://drive.google.com/file/d/1Sc_lOcDsd7ETBYSwueBP8nV6MtGSz-_S/view?usp=sharing">My Resume</a></p>
+        <div class="item">
+            <p><a href="https://drive.google.com/file/d/1Sc_lOcDsd7ETBYSwueBP8nV6MtGSz-_S/view?usp=sharing">My Resume</a></p>
         </div>
-    <div class="item">
-        <p><a href=personalprojects.html>My Personal Projects</a></p>
+        <div class="item">
+            <p><a href="personalprojects.html">My Personal Projects</a></p>
         </div>
-    <div class="item">
-        <p><a href=contactinfo.html>Contact Information</a></p>
+        <div class="item">
+            <p><a href="contactinfo.html">Contact Information</a></p>
         </div>
     </div>
-</div>
 
-<!--Here's the actual content for the home page-->
-<h1 class="aboutme">About me</h1>
-<div style="text-align:center;"><img alt="Lauren with her graduation cap smiling" src="me.jpg" width=304px height=201px/></div>
+    <!-- Here's the actual content for the home page -->
 
-<div class="headers"><h2 id="Section">Introducing Me</h2></div>
-<p> My name is Lauren Capucci, and I am a senior at Northwestern University studying journalism and biology. I am originally from Porto Alegre, Brazil, but moved to Evanston a few years ago for school. I am currently on the pre-med track and hope to apply to medical schools soon.</p>
+    <h1 class="aboutme">About me</h1>
+    <div style="text-align: center;">
+        <img alt="Lauren with her graduation cap smiling" src="me.jpg" width="304px" height="201px" />
+    </div>
 
-<div class="headers"><h2 id="Section">Hobbies</h2></div>
-<p>On the weekends, I like to do a few things for fun in order to relax after a long week at work. Some of my hobbies are: </p>
-<ul> <li> Running; </li> <li> Reading; </li> <li> Baking. </li> </ul>
+    <div class="headers">
+        <h2 id="Section">Introducing Me</h2>
+    </div>
+    <p>My name is Lauren Capucci, and I am a senior at Northwestern University studying journalism and biology. I am
+        originally from Porto Alegre, Brazil, but moved to Evanston a few years ago for school. I am currently on the
+        pre-med track and hope to apply to medical schools soon.</p>
+
+    <div class="headers">
+        <h2 id="Section">Hobbies</h2>
+    </div>
+    <p>On the weekends, I like to do a few things for fun in order to relax after a long week at work. Some of my
+        hobbies are:</p>
+    <ul>
+        <li>Running;</li>
+        <li>Reading;</li>
+        <li>Baking.</li>
+    </ul>
 
 </body>
+
 </html>
+
 
 

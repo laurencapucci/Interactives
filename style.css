@@ -31,7 +31,12 @@ a {
 }
 
 /* Again, setting up a style so when this is called upon the background is blue and the fone is white.*/
+
 .additionalinfo
     {background-color: rgb(11, 70, 129);
         color: white;
+    }
+
+@media (orientation: portrait) {
+        #container {flex-direction: column;}
     }
