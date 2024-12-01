@@ -38,6 +38,26 @@
             align-items: center;
             justify-content: center;
         }
+
+        .click-counter {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .toggle-background {
+            margin-top: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -70,7 +90,7 @@
     <div class="headers">
         <h2 id="Section">Introducing Me</h2>
     </div>
-    <p>My name is Lauren Capucci, and I am a senior at Northwestern University studying journalism and biology. I am
+    <p id="aboutMeText">My name is Lauren Capucci, and I am a senior at Northwestern University studying journalism and biology. I am
         originally from Porto Alegre, Brazil, but moved to Evanston a few years ago for school. I am currently on the
         pre-med track and hope to apply to medical schools soon.</p>
 
@@ -85,13 +105,46 @@
         <li>Baking.</li>
     </ul>
 
+    <div class="click-counter">
+        <h2>Click Counter</h2>
+        <button id="clickButton">Click Me!</button>
+        <p>Count: <span id="clickCount">0</span></p>
+    </div>
+
+    <div class="toggle-background">
+        <button id="toggleBackgroundButton">Toggle Background</button>
+    </div>
+
+<!-- Addng in my JavaScript here (for the 3 points)-->
+
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const button = document.getElementById("clickButton");
+            const countDisplay = document.getElementById("clickCount");
+            let count = 0;
+
+            button.addEventListener("click", () => {
+                count++;
+                countDisplay.textContent = count;
+            });
+
+            const toggleButton = document.getElementById("toggleBackgroundButton");
+            const aboutMeSection = document.getElementById("aboutMeText");
+            let isToggled = false;
+
+            toggleButton.addEventListener("click", () => {
+                isToggled = !isToggled;
+                aboutMeSection.style.backgroundColor = isToggled ? "lightblue" : "transparent";
+            });
+        });
+
         console.log("console");
     </script>
 
 </body>
 
 </html>
+
 
 
 
