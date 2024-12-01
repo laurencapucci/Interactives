@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <meta charset="UTF-8">
+
     <!-- I decided to link my CSS page here so I can properly set up the design of my website on a CSS page and make it more organized. -->
 
     <style>
@@ -59,6 +61,9 @@
             text-align: center;
         }
     </style>
+
+<link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+
 </head>
 
 <body>
@@ -117,28 +122,7 @@
 
 <!-- Addng in my JavaScript here (for the 3 points)-->
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const button = document.getElementById("clickButton");
-            const countDisplay = document.getElementById("clickCount");
-            let count = 0;
-
-            button.addEventListener("click", () => {
-                count++;
-                countDisplay.textContent = count;
-            });
-
-            const toggleButton = document.getElementById("toggleBackgroundButton");
-            const aboutMeSection = document.getElementById("aboutMeText");
-            let isToggled = false;
-
-            toggleButton.addEventListener("click", () => {
-                isToggled = !isToggled;
-                aboutMeSection.style.backgroundColor = isToggled ? "lightblue" : "transparent";
-            });
-        });
-
-        console.log("console");
+    <script> console.log("console");
     </script>
 
 </body>
